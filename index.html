@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed">
+  <title>Motion Lab — Applied Mechanics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Motion Lab home"><span class="brand-mark">M</span><span>motion<span class="brand-light">lab</span><small>APPLIED MECHANICS</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#theory">Theory</a><a href="#simulation">Simulation</a><a href="#graphs">Graphs</a><a href="#references">References</a>
+    </nav>
+    <a class="top-cta" href="#practicals">Explore practicals <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> INTERACTIVE ENGINEERING LEARNING</div>
+        <h1>Understand motion.<br><em>See the forces</em><br>behind it.</h1>
+        <p class="hero-lead">Explore applied mechanics through interactive simulations, clear theory, and graphs you can shape yourself.</p>
+        <div class="hero-actions"><a class="button primary" href="#simulation">Launch simulation <span>↗</span></a><a class="text-link" href="#practicals">Browse practicals <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-icon">✳</span><span>LEARN BY DOING<small>Change a variable. Watch the motion respond.</small></span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a projectile path">
+        <div class="art-label label-top">PROJECTILE MOTION <span>01 / 04</span></div>
+        <svg class="hero-svg" viewBox="0 0 600 440" role="img" aria-label="A ball follows a curved trajectory through a coordinate grid">
+          <defs><pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M 42 0 L 0 0 0 42" fill="none" stroke="#34433e" stroke-width="1" opacity=".12"/></pattern><linearGradient id="trail" x1="0" x2="1"><stop stop-color="#f37a4a" stop-opacity=".12"/><stop offset="1" stop-color="#f37a4a" stop-opacity=".85"/></linearGradient></defs>
+          <rect x="36" y="35" width="530" height="350" rx="18" fill="url(#grid)"/>
+          <path d="M72 332 C166 111 347 91 520 332" fill="none" stroke="url(#trail)" stroke-width="4" stroke-dasharray="7 8"/>
+          <path d="M72 332 C166 111 347 91 520 332" fill="none" stroke="#ef7850" stroke-width="2" opacity=".35"/>
+          <path d="M72 332H542M72 332V62" stroke="#50645c" stroke-width="1.5" opacity=".7"/>
+          <path d="M72 332 C166 111 347 91 520 332" fill="none" stroke="#ef7850" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <circle cx="72" cy="332" r="9" fill="#173b31" stroke="#f5f3ed" stroke-width="4"/><circle cx="520" cy="332" r="9" fill="#ef7850" stroke="#f5f3ed" stroke-width="4"/>
+          <circle cx="296" cy="139" r="13" fill="#ef7850" stroke="#fffaf1" stroke-width="4"/><path d="M296 117V87M296 139L338 139" stroke="#ef7850" stroke-width="2" stroke-dasharray="4 4"/>
+          <path d="M72 332L133 268" stroke="#173b31" stroke-width="3"/><path d="M128 267l7-2-2 7" fill="none" stroke="#173b31" stroke-width="3"/>
+          <text x="93" y="281" fill="#173b31" font-size="14" font-family="sans-serif">u₀</text><text x="304" y="82" fill="#52625b" font-size="12" font-family="sans-serif">MAX HEIGHT</text><text x="402" y="364" fill="#52625b" font-size="12" font-family="sans-serif">RANGE</text>
+          <g transform="translate(382 81)"><rect width="126" height="45" rx="8" fill="#fffdf8" stroke="#e4e1d8"/><text x="14" y="19" fill="#839089" font-size="9" font-family="sans-serif" letter-spacing="1">FLIGHT TIME</text><text x="14" y="36" fill="#173b31" font-size="14" font-family="sans-serif">2.84 s</text></g>
+          <g transform="translate(112 108)"><rect width="128" height="45" rx="8" fill="#fffdf8" stroke="#e4e1d8"/><text x="14" y="19" fill="#839089" font-size="9" font-family="sans-serif" letter-spacing="1">VELOCITY</text><text x="14" y="36" fill="#173b31" font-size="14" font-family="sans-serif">18.0 m/s</text></g>
+        </svg>
+        <div class="art-label label-bottom"><span>01</span> CHANGE THE ANGLE. EXPLORE THE OUTCOME.</div>
+        <div class="hero-stamp">KINEMATICS<br><b>IN MOTION</b></div>
+      </div>
+      <div class="hero-index">01 <span>—</span> 04</div>
+    </section>
+
+    <section id="practicals" class="practicals wrap section-pad">
+      <div class="section-heading"><div><div class="eyebrow">THE PRACTICALS</div><h2>Pick a motion to explore.</h2></div><p>Small experiments. Big mechanics ideas.<br>More practicals can be added as the lab grows.</p></div>
+      <div class="practical-grid">
+        <a class="practical-card active" href="#simulation"><span class="card-number">01 / KINEMATICS</span><span class="card-icon projectile-icon">⌁</span><h3>Projectile motion</h3><p>Launch, adjust, and trace a path through the air.</p><span class="card-foot">OPEN SIMULATION <b>↗</b></span></a>
+        <a class="practical-card pending" href="#practicals"><span class="card-number">02 / OSCILLATIONS</span><span class="card-icon">↔</span><h3>Simple harmonic motion</h3><p>A practical space ready for the next experiment.</p><span class="card-foot">COMING NEXT <b>＋</b></span></a>
+        <button class="practical-card add-card" id="addPractical"><span class="add-circle">＋</span><h3>Your next practical</h3><p>Keep this lab growing. New topics can fit right in.</p><span class="card-foot">CUSTOMIZABLE BY DESIGN <b>↗</b></span></button>
+      </div>
+    </section>
+
+    <section id="simulation" class="sim-section">
+      <div class="wrap section-pad">
+        <div class="section-heading sim-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> PRACTICAL 01 · PROJECTILE MOTION</div><h2>Give it a launch.</h2></div><p>Set the initial conditions and watch gravity<br>write the rest of the story.</p></div>
+        <div class="mode-switch" role="tablist" aria-label="Choose projectile simulation"><button class="mode-tab selected" data-mode="flat" role="tab" aria-selected="true">01 &nbsp; Level ground</button><button class="mode-tab" data-mode="incline" role="tab" aria-selected="false">02 &nbsp; Inclined plane</button><a class="mode-theory" href="theory.html#projectile">Theory &amp; formulas ↗</a></div>
+        <div class="sim-layout">
+          <aside class="control-panel panel">
+            <div class="panel-title"><span>INITIAL CONDITIONS</span><span class="live-tag"><i></i> LIVE</span></div>
+            <label class="field-label" for="speedInput">Initial speed <span>u₀</span></label>
+            <div class="number-field"><input id="speedInput" type="number" min="0.1" max="150" step="0.5" value="20"><span>m/s</span></div>
+            <div id="groundFields"><label class="field-label" for="angleInput">Launch angle from horizontal <span>θ</span></label>
+            <div class="range-wrap"><input id="angleInput" type="range" min="5" max="85" value="45"><output id="angleOutput">45°</output></div>
+            <div class="range-ends"><span>5°</span><span>85°</span></div>
+            <label class="field-label" for="heightInput">Launch height <span>y₀</span></label>
+            <div class="number-field"><input id="heightInput" type="number" min="0" max="100" step="0.5" value="0"><span>m</span></div></div>
+            <div id="inclineFields" hidden><label class="field-label" for="slopeInput">Incline angle <span>α</span></label><div class="range-wrap"><input id="slopeInput" type="range" min="0" max="55" value="20"><output id="slopeOutput">20°</output></div><div class="range-ends"><span>0°</span><span>55°</span></div><label class="field-label" for="angleInclineInput">Projection angle above incline <span>β</span></label><div class="range-wrap"><input id="angleInclineInput" type="range" min="5" max="85" value="45"><output id="angleInclineOutput">45°</output></div><div class="range-ends"><span>5°</span><span>85°</span></div></div>
+            <label class="field-label" for="gravityInput">Gravity <span>g</span></label>
+            <div class="number-field"><input id="gravityInput" type="number" min="0.1" max="30" step="0.1" value="9.81"><span>m/s²</span></div>
+            <div class="toggle-row"><span>Show velocity vector</span><label class="switch"><input id="vectorToggle" type="checkbox" checked><span></span></label></div>
+            <div class="toggle-row"><span>Show trajectory trail</span><label class="switch"><input id="trailToggle" type="checkbox" checked><span></span></label></div>
+            <div class="panel-buttons"><button class="button primary full" id="playButton">▶ &nbsp; Play motion</button><button class="button secondary full" id="resetButton">↺ &nbsp; Reset</button></div>
+            <div class="model-note"><span>ⓘ</span> Ideal model · air resistance neglected</div>
+          </aside>
+
+          <div class="visual-column">
+            <div class="simulation-canvas panel"><div class="canvas-top"><span>TRAJECTORY VIEW</span><div class="canvas-actions"><span id="timeReadout">t = 0.00 s</span><button id="replayCanvas" class="canvas-replay" type="button" title="Replay motion from the beginning">↻ Replay</button></div></div><canvas id="trajectoryCanvas" aria-label="Animated projectile motion diagram"></canvas><div class="time-scrubber"><span>0</span><input id="timeSlider" type="range" min="0" max="1000" value="0" aria-label="Scrub through projectile motion"><span id="scrubEnd">0.00 s</span></div><div class="canvas-legend"><span><i class="legend-dot orange"></i> Projectile path</span><span><i class="legend-dot green"></i> Velocity vector</span><span class="drag-hint">Drag on animation or use timeline</span></div></div>
+            <div class="metrics-grid">
+              <div class="metric"><span>HORIZONTAL RANGE <b>R</b></span><strong id="rangeValue">40.77 <small>m</small></strong></div>
+              <div class="metric"><span>MAXIMUM HEIGHT <b>H</b></span><strong id="heightValue">10.19 <small>m</small></strong></div>
+              <div class="metric"><span>TIME OF FLIGHT <b>T</b></span><strong id="flightValue">2.88 <small>s</small></strong></div>
+              <div class="metric"><span>FINAL SPEED <b>|v|</b></span><strong id="finalSpeedValue">20.00 <small>m/s</small></strong></div>
+              <div class="metric incline-metric" id="impactAngleMetric" hidden><span>LANDING ANGLE TO INCLINE <b>φ</b></span><strong id="impactAngleValue">— <small>°</small></strong></div>
+            </div>
+            <div class="motion-readout panel"><div class="panel-title"><span>LIVE MOTION AT CURRENT TIME</span><span class="live-tag"><i></i> SCRUB TO INSPECT</span></div><div class="readout-grid"><span>Position x / along plane <b id="readX">0.00 m</b></span><span>Height above incline <b id="readH">0.00 m</b></span><span>Horizontal velocity vₓ <b id="readVx">14.14 m/s</b></span><span>Vertical velocity vᵧ <b id="readVy">14.14 m/s</b></span><span>Horizontal acceleration aₓ <b id="readAx">0.00 m/s²</b></span><span>Vertical acceleration aᵧ <b id="readAy">−9.81 m/s²</b></span><span>Along-plane velocity vₛ <b id="readVs">14.14 m/s</b></span><span>Normal acceleration aₙ <b id="readAn">−9.22 m/s²</b></span></div></div>
+            <div class="inline-formulas"><div><b>LEVEL GROUND</b><span>x = u cos θ · t &nbsp; | &nbsp; y = y₀ + u sin θ · t − ½gt²<br>aₓ = 0 &nbsp; | &nbsp; aᵧ = −g</span></div><div><b>INCLINED PLANE</b><span>s = u cos β · t − ½g sin α · t²<br>h = u sin β · t − ½g cos α · t²</span></div><a href="theory.html#projectile">Full concepts &amp; formulas ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="theory" class="theory-section wrap section-pad">
+      <div class="theory-intro"><div class="eyebrow">THE IDEA, SIMPLY</div><h2>One launch.<br><em>Two independent motions.</em></h2><p>A projectile follows a curved path because its horizontal motion continues steadily while gravity changes its vertical motion.</p><div class="theory-stamp">NEWTON<br><b>+ GRAVITY</b></div></div>
+      <div class="equation-list">
+        <div class="equation-row"><span class="eq-index">01</span><div><h3>Resolve the launch speed</h3><p>Split the initial velocity into horizontal and vertical components.</p></div><div class="equation">u<sub>x</sub> = u cos θ<br>u<sub>y</sub> = u sin θ</div></div>
+        <div class="equation-row"><span class="eq-index">02</span><div><h3>Horizontal motion</h3><p>No horizontal acceleration in the ideal model.</p></div><div class="equation">x = u<sub>x</sub>t<br>v<sub>x</sub> = u<sub>x</sub></div></div>
+        <div class="equation-row"><span class="eq-index">03</span><div><h3>Vertical motion</h3><p>Gravity acts downward throughout the flight.</p></div><div class="equation">y = y₀ + u<sub>y</sub>t − ½gt²<br>v<sub>y</sub> = u<sub>y</sub> − gt</div></div>
+        <div class="equation-row"><span class="eq-index">04</span><div><h3>At the top</h3><p>The vertical velocity is momentarily zero.</p></div><div class="equation">H = y₀ + u<sub>y</sub>² / 2g</div></div>
+      </div>
+    </section>
+
+    <section id="graphs" class="graphs-section">
+      <div class="wrap section-pad">
+        <div class="section-heading"><div><div class="eyebrow">READ THE MOTION</div><h2>Choose your graph.</h2></div><p>Explore relationships between time, position,<br>velocity, and acceleration.</p></div>
+        <div class="graph-layout">
+        <div class="graph-controls panel"><div class="panel-title"><span>GRAPH BUILDER</span><span class="graph-count">ANY PAIR</span></div><label class="field-label" for="xAxisSelect">Horizontal axis <span>X</span></label><select id="xAxisSelect"></select><label class="field-label" for="yAxisSelect">Vertical axis <span>Y</span></label><select id="yAxisSelect"></select><div class="preset-label">QUICK PICKS</div><div class="preset-buttons"><button data-preset="t,x">x vs t</button><button data-preset="t,y">y vs t</button><button data-preset="ux,x">uₓ vs x</button><button data-preset="path,ux">uₓ vs r</button><button data-preset="t,acc">a vs t</button><button data-preset="x,acc">a vs x</button><button data-preset="t,v2">v² vs t</button><button data-preset="t,a2">a² vs t</button><button data-preset="x,hmax">hₘₐₓ vs x</button><button data-preset="t,hmax">hₘₐₓ vs t</button><button data-preset="t,vx">vₓ vs t</button><button data-preset="t,vy">vᵧ vs t</button></div><button class="button primary full" id="downloadCsv">↓ &nbsp; Download data (CSV)</button></div>
+          <div class="chart-panel panel"><div class="chart-head"><div><span class="chart-kicker">PROJECTILE DATA</span><h3 id="chartTitle">Horizontal position vs time</h3></div><span class="chart-badge">IDEAL MODEL</span></div><div class="chart-area"><canvas id="graphCanvas" aria-label="Selected projectile motion graph"></canvas></div><div class="chart-foot"><span>Each axis can use any available quantity</span><span id="pointCount">101 data points</span></div><section class="graph-insight" aria-live="polite"><div class="insight-title">What this graph tells you</div><p id="graphMeaningSummary">This graph shows how horizontal position changes with time.</p><div class="insight-grid"><div><b>SLOPE</b><p id="graphSlopeMeaning">The slope gives horizontal velocity.</p></div><div><b>AREA UNDER THE CURVE</b><p id="graphAreaMeaning">No standard kinematics quantity is represented by this area.</p></div></div></section><details class="graph-data" open><summary>Graph values <span>101 plotted points</span></summary><div class="graph-table-scroll"><table><thead><tr><th id="graphXHeading">X value</th><th id="graphYHeading">Y value</th></tr></thead><tbody id="graphDataRows"></tbody></table></div></details></div>
+        </div>
+        <p class="graph-note">Select any two quantities to graph them against each other. Some pairs may be constant or overlap, depending on the physics.</p>
+      </div>
+    </section>
+
+    <section id="references" class="references wrap section-pad"><div><div class="eyebrow">GO A LITTLE FURTHER</div><h2>Built on the basics.</h2><p>Open the theory page for the model, equations, assumptions, and further reading.</p></div><a class="reference-card" href="theory.html#projectile"><span class="ref-number">01</span><div><b>Projectile motion theory</b><p>Components, trajectory, flight time, range, and maximum height.</p></div><span class="ref-mark">↗</span></a><a class="reference-card" href="theory.html#incline"><span class="ref-number">02</span><div><b>Projectile on an incline</b><p>Resolve motion along and normal to the plane.</p></div><span class="ref-mark">↗</span></a></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">M</span><span>motion<span class="brand-light">lab</span><small>APPLIED MECHANICS</small></span></a><span>Curiosity, in motion. <b>© 2026</b></span><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
